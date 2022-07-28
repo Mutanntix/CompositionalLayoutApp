@@ -45,3 +45,27 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     }
 }
 
+//MARK: - Diffable data source -
+extension ViewController {
+    func setDataSource() {
+        self.dataSource =
+        UICollectionViewDiffableDataSource<ListSection, ListItem>(
+            collectionView: self.collectionView,
+            cellProvider: {
+                (collectionView, indexPath, itemIdentifier) in
+                let section = self.sections[indexPath.section]
+                return CompositionalLayoutHelper
+                    .getCellForSectionFor(
+                        section,
+                        collectionView,
+                        indexPath)
+            })
+        
+    }
+    
+    func setSnapshot() {
+        let snapshot = NSDiffableDataSourceSnapshot<ListSection,
+                                                    ListItem>()
+        
+    }
+}

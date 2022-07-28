@@ -198,3 +198,29 @@ extension CompositionalLayoutHelper {
     
     
 }
+
+
+//MARK: - Diffable data source helper -
+extension CompositionalLayoutHelper {
+    static func getCellForSectionFor(_ section: ListSection,
+                                     _ collectionView: UICollectionView,
+                                     _ indexPath: IndexPath)
+    -> UICollectionViewCell {
+        switch section {
+        case .stories(let items):
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoryCollectionViewCell", for: indexPath) as! StoryCollectionViewCell
+            cell.setup(items[indexPath.item])
+            return cell
+        case .popular(let items):
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PortraitCollectionViewCell", for: indexPath) as! PortraitCollectionViewCell
+            cell.setup(items[indexPath.item])
+            return cell
+        case .comingSoon(let items):
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LandscapeCollectionViewCell", for: indexPath) as! LandscapeCollectionViewCell
+            cell.setup(items[indexPath.item])
+            return cell
+            
+        default: fatalError("something wrong with layer helper")
+        }
+    }
+}

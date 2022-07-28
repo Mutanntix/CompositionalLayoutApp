@@ -6,7 +6,7 @@
 
 import Foundation
 
-enum ListSection {
+enum ListSection: Hashable, Decodable {
     case stories([ListItem])
     case popular([ListItem])
     case comingSoon([ListItem])

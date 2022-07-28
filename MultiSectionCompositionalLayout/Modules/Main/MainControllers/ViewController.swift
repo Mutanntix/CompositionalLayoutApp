@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var refreshControl: UIRefreshControl!
     
+    var dataSource: UICollectionViewDiffableDataSource<ListSection, ListItem>!
     let sections = MockData.shared.pageData
     
     override func viewDidLoad() {
