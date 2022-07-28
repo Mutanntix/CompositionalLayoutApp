@@ -6,7 +6,7 @@
 
 import Foundation
 
-struct ListItem {
+struct ListItem: Hashable, Decodable {
     let title: String
     let image: String
 }

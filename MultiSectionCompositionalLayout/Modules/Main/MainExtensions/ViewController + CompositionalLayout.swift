@@ -24,6 +24,4 @@ extension ViewController {
             }
         }
     }
-    
-    
 }
