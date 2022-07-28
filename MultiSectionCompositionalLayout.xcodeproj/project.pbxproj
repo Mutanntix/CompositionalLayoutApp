@@ -20,7 +20,6 @@
 		E52E5EB628313F1200ACAAA3 /* LandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E5EB528313F1100ACAAA3 /* LandscapeCollectionViewCell.swift */; };
 		E580B3FA283984C5002A77CA /* CollectionViewHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E580B3F9283984C5002A77CA /* CollectionViewHeaderReusableView.swift */; };
 		E580B3FC28398791002A77CA /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E580B3FB28398791002A77CA /* MockData.swift */; };
-		FD9FBF84289135D300068787 /* ViewController + Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9FBF83289135D300068787 /* ViewController + Actions.swift */; };
 		FDA76AD4289010EB00900947 /* CompositionalLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA76AD3289010EB00900947 /* CompositionalLayoutHelper.swift */; };
 		FDA76ADD2890143900900947 /* ViewController + CompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA76ADC2890143900900947 /* ViewController + CompositionalLayout.swift */; };
 		FDA76ADF2890162900900947 /* ViewController + UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA76ADE2890162900900947 /* ViewController + UICollectionViewDataSource.swift */; };
@@ -44,7 +43,6 @@
 		E52E5EB528313F1100ACAAA3 /* LandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		E580B3F9283984C5002A77CA /* CollectionViewHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHeaderReusableView.swift; sourceTree = "<group>"; };
 		E580B3FB28398791002A77CA /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
-		FD9FBF83289135D300068787 /* ViewController + Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Actions.swift"; sourceTree = "<group>"; };
 		FDA76AD3289010EB00900947 /* CompositionalLayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutHelper.swift; sourceTree = "<group>"; };
 		FDA76ADC2890143900900947 /* ViewController + CompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + CompositionalLayout.swift"; sourceTree = "<group>"; };
 		FDA76ADE2890162900900947 /* ViewController + UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 			children = (
 				FDA76ADC2890143900900947 /* ViewController + CompositionalLayout.swift */,
 				FDA76ADE2890162900900947 /* ViewController + UICollectionViewDataSource.swift */,
-				FD9FBF83289135D300068787 /* ViewController + Actions.swift */,
 			);
 			path = MainExtensions;
 			sourceTree = "<group>";
@@ -269,7 +266,6 @@
 				E52E5E9D283121C000ACAAA3 /* ViewController.swift in Sources */,
 				E52E5EB628313F1200ACAAA3 /* LandscapeCollectionViewCell.swift in Sources */,
 				E52E5E99283121C000ACAAA3 /* AppDelegate.swift in Sources */,
-				FD9FBF84289135D300068787 /* ViewController + Actions.swift in Sources */,
 				E52E5E9B283121C000ACAAA3 /* SceneDelegate.swift in Sources */,
 				E580B3FA283984C5002A77CA /* CollectionViewHeaderReusableView.swift in Sources */,
 				FDA76AE22890183500900947 /* Typealias.swift in Sources */,
