@@ -202,9 +202,9 @@ extension CompositionalLayoutHelper {
 
 //MARK: - Diffable data source helper -
 extension CompositionalLayoutHelper {
-    static func getCellForSectionFor(_ section: ListSection,
-                                     _ collectionView: UICollectionView,
-                                     _ indexPath: IndexPath)
+    static func getCellFor(_ section: ListSection,
+                           _ collectionView: UICollectionView,
+                           _ indexPath: IndexPath)
     -> UICollectionViewCell {
         switch section {
         case .stories(let items):
@@ -222,5 +222,20 @@ extension CompositionalLayoutHelper {
             
         default: fatalError("something wrong with layer helper")
         }
+    }
+
+    static func getReusableViewFor(_ collectionView: UICollectionView,
+                            of kind: String,
+                            _ indexPath: IndexPath,
+                            _ sections: [ListSection]) -> UICollectionReusableView? {
+        guard let supView = collectionView
+            .dequeueReusableSupplementaryView(
+                ofKind: kind,
+                withReuseIdentifier: "CollectionViewHeaderReusableView",
+                for: indexPath) as? CollectionViewHeaderReusableView
+        else { return nil }
+        supView.setup(sections[indexPath.section].title)
+        
+        return supView
     }
 }

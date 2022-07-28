@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        setDataSource()
+        setSnapshot()
     }
     
     private func setupCollectionView() {
